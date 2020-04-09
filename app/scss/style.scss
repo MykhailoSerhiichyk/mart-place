@@ -682,4 +682,54 @@
 
 // end folowers-slider
 
+// start rating 
+
+.rating {
+    background-color: #212225;
+    padding: 90px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &__images {
+        height: 55px;
+        margin-bottom: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__number {
+        font-size: 36px;
+        color: #feb71d;
+        margin-bottom: 10px;
+
+        &-download {
+            color: #58c9e9;
+        }
+
+        &-smile {
+            color: $green;
+        }   
+
+        &-social {
+            color: #ff6a6d;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        color: #ffffff;
+    }
+}
+
+
+// end rating 
+
 
