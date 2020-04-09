@@ -284,5 +284,203 @@
 
 // end advantages
   
+// start product-slider
+
+.product-slider {
+    padding: 120px 0;
+    background-color: $bg;
+    position: relative;
+
+    &__item-content {
+        display: flex;
+        background-color: #fff;
+    }
+
+    .slick-arrow {
+        font-size: 0;
+        border: none;
+        background-color: $purple;
+        height: 45px;
+        width: 55px;
+        position: absolute;
+        background-image: url(../images/icons/chevron-left.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: auto;
+        z-index: 2;
+        border-radius: 35px;
+        cursor: pointer;
+        outline: none;
+        top: -125px;
+        right: 30px;
+    }
+
+    .slick-next {
+        background-image: url(../images/icons/chevron-right.png);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .slick-prev {
+        right: 85px;
+        padding-right: 30px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.product-slider__images {
+    min-height: 450px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 555px;
+    width: 100%;
+}
+
+.product-slider__box {
+    max-width: 585px;
+    width: 100%;
+    padding: 50px 50px 25px;
+
+    &-title {
+        font-size: 24px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    &-subtitle {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &-text {
+        margin-bottom: 35px;
+    }
+
+    &-links {
+        padding-bottom: 45px;
+        border-bottom: 1px solid #ececec;
+        margin-bottom: 20px;
+        a {
+            background-color: #f1f3f6;
+            font-size: 15px;
+            color: #868c96;
+            border-radius: 15px;
+            padding: 0 16px;
+            transition: all .3s;
+
+            & + a {
+                margin-left: 7px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.product-slider__author {
+    font-size: 15px;
+    line-height: 30px;
+    margin-right: 20px;
+    display: flex;
+    color: #000;
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+        margin-right: 9px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.product-slider__wordpress {
+    font-size: 15px;
+    line-height: 30px;
+    color: $purple;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(../images/icons/wordpress.png);
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 7px;
+    }
+}
+
+.product-slider__box-rating {
+    display: flex;
+
+    .rate-star {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &.jq-ry-container {
+            padding: 0;
+        }
+    }
+}
+
+.product-slider__price {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: $btn;
+    border-radius: 15px;
+    padding: 1px 18px;
+    margin-right: 20px;
+}
+
+.product-slider__heart {
+    font-size: 15px;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(../images/icons/heart.png);
+        left: 0;
+        width: 16px;
+        height: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.product-slider__basket {
+    font-size: 15px;
+    color: $btn;
+    padding-left: 23px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(../images/icons/cart.png);
+        width: 14px;
+        height: 14px;
+        left: 0;
+        top: 8px;
+    }
+}
+
   
   
+
+// end product-slider
+
+
