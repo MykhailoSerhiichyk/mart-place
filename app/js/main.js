@@ -12,5 +12,10 @@ $(function(){
     
     var mixer = mixitup('.product-mixitup__inner-box');
 
+    $('.folowers-slider__inner').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+
 
 });
