@@ -7,10 +7,10 @@ $(function(){
       });
 
     $('.product-slider__inner').slick({
-        
+
     });
     
-
+    var mixer = mixitup('.product-mixitup__inner-box');
 
 
 });
