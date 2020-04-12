@@ -1098,8 +1098,46 @@
     }
 }
 
-
-
-
-
 // end services
+
+// start ready
+
+.ready {
+    padding: 110px 0;
+    background-image: url(../images/content/ready-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 400px;
+
+    &__item {
+        max-width: 555px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.ready__title {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.ready__text {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.ready__btn {
+    font-size: 16px;
+    color: $btn;
+    padding: 20px;
+    width: 190px;
+    border-radius: 40px;
+    background-color: #fff;
+    font-weight: 500;
+}
+
+// end ready
