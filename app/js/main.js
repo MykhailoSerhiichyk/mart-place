@@ -17,5 +17,7 @@ $(function(){
         slidesToScroll: 3
     });
 
+    $('select').styler();
+
 
 });
