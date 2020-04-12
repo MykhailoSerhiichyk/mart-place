@@ -1065,10 +1065,41 @@
     }
 }
 
-  
-
-
-
-
-
 // end news
+
+// start services
+
+.services {
+    padding: 60px 0 55px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.services__item-text {
+    font-size: 24px;
+    color: #000;
+    margin-top: 20px;
+
+    span {
+        color: $btn;
+    }
+
+    .services__text-purple {
+        color: $purple;
+    }
+}
+
+
+
+
+
+// end services
