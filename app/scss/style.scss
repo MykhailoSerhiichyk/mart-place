@@ -6,6 +6,7 @@
 
 .header__top {
     background-color: $bg;
+    position: relative;
 }
 
 .header__top-inner {
@@ -17,7 +18,7 @@
 
 .default__link {
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 30px;
     background-color: $btn;
     font-size: 14px;
     line-height: 28px;
@@ -25,6 +26,10 @@
     padding: 4px 18px;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+}
+
+.header__btn-menu {
+    display: none;
 }
 
 .header__btn {
@@ -35,10 +40,18 @@
     width: 72px;
     border-radius: 4px;
     text-align: center;
+    height: 32px;
+}
+
+.header__top-box {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
 }
 
 .header__btn-login {
     background-color: $green;
+    margin-left: 10px;
 }
 
 .header__btn-register {
@@ -46,11 +59,31 @@
     margin-left: 7px;
 }
 
+.header__btn-logout {
+    background-color: #f05b44;
+    margin-left: 15px;
+}
+
 .header__bottom-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
+}
+
+.menu__btn {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+
+    div {
+        background-color: #000000;
+        height: 3px;
+
+        & + div {
+            margin-top: 5px;
+        }
+    }
 }
 
 .menu__list {
@@ -243,7 +276,8 @@
 }
 
 .header__top-links {
-    margin-left: 85px;
+    margin-left: 60px;
+    margin-right: 25px;
 
     a{
         font-size: 15px;
@@ -2017,8 +2051,9 @@
 
 .ready__title {
     font-size: 36px;
+    line-height: 42px;
     color: #ffffff;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .ready__text {
@@ -2049,6 +2084,7 @@
 .footer__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__item {

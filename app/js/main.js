@@ -50,6 +50,14 @@ $(function(){
         $('.aside-item__form').toggleClass('active');
     });
 
+    $('.menu__btn').on('click', function(){
+        $('.menu__list').slideToggle();
+    });
+
+    $('.header__btn-menu').on('click', function(){
+        $('.header__top-box').toggleClass('active');
+    });
+
     var mixer = mixitup('.product-mixitup__inner-box');
 
 });
