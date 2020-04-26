@@ -27,13 +27,13 @@ $(function(){
     });
 
     $('.lnr-list').on('click', function(){
-        $('.category__content-item').addClass('list');
+        $('.category__content-item, .favorites__content-item').addClass('list');
         $('.lnr-list').addClass('active');
         $('.lnr-frame-expand').removeClass('active');
     });
 
     $('.lnr-frame-expand').on('click', function(){
-        $('.category__content-item').removeClass('list');
+        $('.category__content-item, .favorites__content-item').removeClass('list');
         $('.lnr-frame-expand').addClass('active');
         $('.lnr-list').removeClass('active');
     });
