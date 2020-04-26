@@ -15,7 +15,7 @@ $(function(){
         slidesToScroll: 3
     });
 
-    $('.search select').styler();
+    $('.search select, .login input[type="checkbox"]').styler();
 
     $(".js-range-slider").ionRangeSlider({
         type: "double",

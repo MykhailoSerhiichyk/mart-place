@@ -3780,5 +3780,121 @@
 
 // end favorites
 
+// start login
+
+.login {
+    background-color: #eff1f5;
+    padding: 70px 0 120px;
+}
+
+.login__form {
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    max-width: 555px;
+    width: 100%;
+    margin: 0 auto;
+
+    form {
+        padding: 25px 50px 55px;
+
+        label {
+            font-weight: 500;
+            color: #000;
+
+            span {
+                cursor: pointer;
+                margin-left: 12px;
+                font-weight: 400;
+                color: $text;
+            }
+        }
+
+        input {
+            display: block;
+            height: 50px;
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 0 20px;
+            background-color: #f4f5f8;
+            color: #000;
+            margin-bottom: 25px;
+
+            &::placeholder {
+                color: #898f96;
+            }
+
+            &[type="checkbox"] {
+                display: inline;
+                height: auto;
+                width: auto;
+            }
+        }
+
+        button {
+            display: block;
+            width: 190px;
+            padding: 10px;
+            background-color: $btn;
+            border-radius: 30px;
+            font-size: 15px;
+            line-height: 30px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin: 30px 0 35px;
+        }
+
+        .jq-checkbox.checked .jq-checkbox__div {
+            width: 11px;
+            height: 7px;
+            margin: 5px 0 0 4px;
+            border-bottom: 3px solid #fff;
+            border-left: 3px solid #fff;
+            -webkit-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+            border-radius: 2px;
+        }
+
+        .jq-checkbox, .jq-radio {
+            vertical-align: -5px;
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            border: none;
+            background: $btn;
+            box-shadow: none;
+            border-radius: 50%;
+        }
+    }
+}
+
+.login__form-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__form-subtext {
+    color: #898f96;
+
+    a {
+        color: $btn;
+    }
+}
+
+.login__form-top {
+    padding: 50px 0 25px;
+    border-bottom: 1px solid #e8ebf0;
+    text-align: center;
+}
+
+.login__form-title {
+    font-size: 26px;
+    color: #000;
+    margin-bottom: 15px;
+}
+  
+// end login
 
 @import 'media';
