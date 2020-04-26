@@ -3783,13 +3783,15 @@
 // start login
 
 .login,
-.register {
+.register,
+.recover-password {
     background-color: #eff1f5;
     padding: 70px 0 120px;
 }
 
 .login__form,
-.register__form {
+.register__form,
+.recover-password__form {
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     border-radius: 4px;
     background-color: #fff;
@@ -3875,7 +3877,8 @@
 }
 
 .login__form-box,
-.register__form-box {
+.register__form-box,
+.recover-password__form-box {
     display: flex;
     justify-content: space-between;
 }
@@ -3890,7 +3893,8 @@
 }
 
 .login__form-top,
-.register__form-top {
+.register__form-top,
+.recover-password__form-top {
     padding: 50px 0 25px;
     border-bottom: 1px solid #e8ebf0;
     text-align: center;
@@ -3904,7 +3908,8 @@
 }
 
 .login__form-text,
-.register__form-text {
+.register__form-text,
+.recover-password__form-text {
     max-width: 428px;
     width: 100%;
     margin: 0 auto;
@@ -3913,11 +3918,23 @@
   
 // end login
 
-// start register
+// start recover-password
+
+.recover-password__form {
+    form {
+        button {
+            margin: 0;
+        }
+    }
+}
+
+.recover-password__form-text {
+    max-width: 460px;
+    text-align: left;
+}
 
 
-
-// end register
+// end recover-password
 
 
 @import 'media';
