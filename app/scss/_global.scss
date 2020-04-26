@@ -66,7 +66,23 @@ body {
 }
 
 .breadcrumbs {
+    background-image: url(../images/content/themes-bg.jpg);
+    min-height: 181px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 55px 0;
+    border-bottom: 1px solid #9b8fd2;
+    border-top: 1px solid #594d87;
 
+    &__title {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 34px;
+        margin-top: 20px;
+        color: #ffffff;
+    }
+    
     &__inner {
         overflow: hidden;
         width: 1200px;
