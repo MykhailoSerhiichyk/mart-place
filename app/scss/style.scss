@@ -3782,12 +3782,14 @@
 
 // start login
 
-.login {
+.login,
+.register {
     background-color: #eff1f5;
     padding: 70px 0 120px;
 }
 
-.login__form {
+.login__form,
+.register__form {
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     border-radius: 4px;
     background-color: #fff;
@@ -3820,6 +3822,7 @@
             background-color: #f4f5f8;
             color: #000;
             margin-bottom: 25px;
+            margin-top: 10px;
 
             &::placeholder {
                 color: #898f96;
@@ -3844,6 +3847,7 @@
             border: none;
             cursor: pointer;
             margin: 30px 0 35px;
+            font-weight: 500;
         }
 
         .jq-checkbox.checked .jq-checkbox__div {
@@ -3870,12 +3874,14 @@
     }
 }
 
-.login__form-box {
+.login__form-box,
+.register__form-box {
     display: flex;
     justify-content: space-between;
 }
 
-.login__form-subtext {
+.login__form-subtext,
+.register__form-subtext {
     color: #898f96;
 
     a {
@@ -3883,18 +3889,35 @@
     }
 }
 
-.login__form-top {
+.login__form-top,
+.register__form-top {
     padding: 50px 0 25px;
     border-bottom: 1px solid #e8ebf0;
     text-align: center;
 }
 
-.login__form-title {
+.login__form-title,
+.register__form-title {
     font-size: 26px;
     color: #000;
     margin-bottom: 15px;
 }
+
+.login__form-text,
+.register__form-text {
+    max-width: 428px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 28px;
+}
   
 // end login
+
+// start register
+
+
+
+// end register
+
 
 @import 'media';
