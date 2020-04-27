@@ -4030,4 +4030,130 @@
 }
 
 // end error-404
+
+// start pricing
+
+.pricing {
+    background-color: #eff1f5;
+    padding: 115px 0 120px;
+    text-align: center;
+}
+
+.pricing__title {
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 20px;
+
+    span {
+        color: $btn;
+    }
+}
+
+.pricing__text {
+    max-width: 678px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.pricing__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing__item {
+    max-width: 360px;
+    width: 100%;
+    padding: 0 30px 30px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    border-top: 3px solid $red;
+
+    &-second {
+        border-top-color: $btn;
+
+        .pricing__item-btn {
+            background-color: $btn;
+        }
+    }
+
+    &-third {
+        border-top-color: #feb71d;
+
+        .pricing__item-btn {
+            background-color: #feb71d;
+        }
+    }
+
+    &-title {
+        padding: 21px 0;
+        border-bottom: 1px solid #e8ebf0;
+        font-size: 24px;
+        color: #000;
+        font-weight: 500;
+    }
+
+    &-price {
+        padding: 25px 0 35px;
+        font-size: 36px;
+        color: #000;
+
+        span {
+            font-size: 16px;
+            color: $text;
+        }
+    }
+
+    &-btn {
+        width: 100%;
+        background-color: $red;
+        border-radius: 4px;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+    &-list {
+        text-align-last: left;
+        margin-bottom: 30px;
+
+        li {
+            padding-left: 23px;
+            line-height: 36px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 7px;
+                height: 7px;
+                background-color: #c5cad4;
+                border-radius: 50%;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            span {
+                font-weight: 500;
+                color: #000;
+            }
+
+            &.pricing__item-special::after {
+                position: absolute;
+                content: "\e87d";
+                font-family: 'Linearicons-Free';
+                font-size: 18px;
+                color: $text;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+  
+// end pricing
+
 @import 'media';

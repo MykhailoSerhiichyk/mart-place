@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <div class="header__logo">
+                            <a href="#">
+                                <img src="images/header-logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="header__top-links">
+                            <a href="#">Start Selling</a>
+                            <a href="#">Forums</a>
+                            <a href="#">Help</a>
+                        </div>
+                        <a class="default__link" href="#">
+                            Become a Seller
+                        </a>
+                        <div class="header__top-box">
+                            <div class="header__alert-inner">
+                                <a class="alert lnr-alarm" href="#"><span>25</span></a>
+                                <div class="header__alert-menu alert-menu">
+                                    <div class="alert-menu__box">
+                                        <div class="alert-menu__title">
+                                            My Notifications
+                                        </div>
+                                        <a class="alert-menu__link" href="#">
+                                            View All
+                                        </a>
+                                    </div>
+                                    <div class="alert-menu__item">
+                                        <div class="alert-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/header-alert-user.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="alert-menu__author">
+                                            <div class="alert-menu__name">
+                                                <a href="#">Anderson</a> added to Favourite <span>Marketify Coffee Shop</span>
+                                            </div>
+                                            <div class="alert-menu__time">
+                                                Just now
+                                            </div>
+                                        </div>
+                                        <a class="alert-menu__icon lnr-heart" href="#"></a>
+                                    </div>
+                                    <div class="alert-menu__item">
+                                        <div class="alert-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/header-alert-user.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="alert-menu__author">
+                                            <div class="alert-menu__name">
+                                                <a href="#">Michael Jorden</a> commented 
+                                                on <span>MartPlace Extension Bundle</span>
+                                            </div>
+                                            <div class="alert-menu__time">
+                                                2 hours ago
+                                            </div>
+                                        </div>
+                                        <a class="alert-menu__icon lnr-bubble" href="#"></a>
+                                    </div>
+                                    <div class="alert-menu__item">
+                                        <div class="alert-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/header-alert-user.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="alert-menu__author">
+                                            <div class="alert-menu__name">
+                                                <a href="#">Moshed</a> Purchased <span>Bryson-Responsive Template</span>
+                                            </div>
+                                            <div class="alert-menu__time">
+                                                6 hours ago
+                                            </div>
+                                        </div>
+                                        <a class="alert-menu__icon lnr-cart" href="#"></a>
+                                    </div>
+                                    <div class="alert-menu__item">
+                                        <div class="alert-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/header-alert-user.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="alert-menu__author">
+                                            <div class="alert-menu__name">
+                                                <a href="#">Tamim</a> wrote a review on <span>Rida-Responsive vCard Temp...</span>
+                                            </div>
+                                            <div class="alert-menu__time">
+                                                2 days ago
+                                            </div>
+                                        </div>
+                                        <a class="alert-menu__icon lnr-star" href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__message-inner">
+                                <a class="message lnr-envelope" href="#"><span>6</span></a>
+                                <div class="header__message-menu message-menu">
+                                    <div class="message-menu__box">
+                                        <div class="message-menu__title">
+                                            My Notifications
+                                        </div>
+                                        <a class="message-menu__link" href="#">
+                                            View All
+                                        </a>
+                                    </div>
+                                    <div class="message-menu__item">
+                                        <div class="message-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/header-alert-user.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="message-menu__author">
+                                            <div class="message-menu__name">
+                                                <a class="letter" href="#">Washim</a>
+                                            </div>
+                                            <div class="message-menu__message">
+                                                Hello John Smith! Nunc placerat id...
+                                            </div>
+                                        </div>
+                                        <div class="message-menu__when today" href="#">Just now</div>
+                                    </div>
+                                    <div class="message-menu__item">
+                                        <div class="message-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/header-alert-user.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="message-menu__author">
+                                            <div class="message-menu__name">
+                                                <a class="letter" href="#">Bulbul Ahmed</a>
+                                            </div>
+                                            <div class="message-menu__message">
+                                                Hello John Smith! Nunc placerat id...
+                                            </div>
+                                        </div>
+                                        <div class="message-menu__when today" href="#">2 hours ago</div>
+                                    </div>
+                                    <div class="message-menu__item">
+                                        <div class="message-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/header-alert-user.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="message-menu__author">
+                                            <div class="message-menu__name">
+                                                <a class="repost" href="#">EchoTheme</a>
+                                            </div>
+                                            <div class="message-menu__message">
+                                                Hello John Smith! Nunc placerat id...
+                                            </div>
+                                        </div>
+                                        <div class="message-menu__when" href="#">Jul 16</div>
+                                    </div>
+                                    <div class="message-menu__item">
+                                        <div class="message-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/header-alert-user.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="message-menu__author">
+                                            <div class="message-menu__name">
+                                                <a href="#">Themeluva</a>
+                                            </div>
+                                            <div class="message-menu__message">
+                                                Hello John Smith! Nunc placerat id...
+                                            </div>
+                                        </div>
+                                        <div class="message-menu__when" href="#">May 23</div>
+                                    </div>
+                                    <div class="message-menu__item">
+                                        <div class="message-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/header-alert-user.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="message-menu__author">
+                                            <div class="message-menu__name">
+                                                <a href="#">Adnan</a>
+                                            </div>
+                                            <div class="message-menu__message">
+                                                Hello John Smith! Nunc placerat id...
+                                            </div>
+                                        </div>
+                                        <div class="message-menu__when" href="#">Mar 26</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__basket-inner">
+                                <a class="basket lnr-cart" href="#"><span>2</span></a>
+                                <div class="header__basket-menu basket-menu">
+                                    <div class="basket-menu__item">
+                                        <div class="basket-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/basket-item-img.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="basket-menu__product">
+                                            <div class="basket-menu__name">
+                                                Finance and Consulting Business Theme
+                                            </div>
+                                            <div class="basket-menu__theme">
+                                                Wordpress
+                                            </div>
+                                        </div>
+                                        <div class="basket-menu__when">
+                                            <a class="basket-menu__trash lnr-trash" href="#"></a>
+                                            <div class="basket-menu__price">
+                                                $60
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-menu__item">
+                                        <div class="basket-menu__images">
+                                            <a href="#">
+                                                <img src="images/content/basket-item-img.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="basket-menu__product">
+                                            <div class="basket-menu__name">
+                                                Finance and Consulting Business Theme
+                                            </div>
+                                            <div class="basket-menu__theme">
+                                                Wordpress
+                                            </div>
+                                        </div>
+                                        <div class="basket-menu__when">
+                                            <a class="basket-menu__trash lnr-trash" href="#"></a>
+                                            <div class="basket-menu__price">
+                                                $20
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-menu__total">
+                                        Total:<span>$80</span>
+                                    </div>
+                                    <div class="basket-menu__btn">
+                                        <a class="basket-btn__cart" href="#">Go to Cart</a>
+                                        <a class="basket-btn__checkout" href="#">Go to Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__user">
+                                <div class="header__user-images">
+                                    <a href="#">
+                                        <img src="images/content/header-user-img.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="header__user-info">
+                                    <a class="header__user-name" href="#">
+                                        Taofiq Hakim
+                                    </a>
+                                    <a class="header__user-score" href="#">
+                                        $20.45
+                                    </a>
+                                </div>
+                                <ul class="header__user-menu">
+                                    <li><a href="#">Profile Page</a></li>
+                                    <li><a class="user-menu__dashboard" href="#">Dashboard</a></li>
+                                    <li><a class="user-menu__settings" href="#">Account Settings</a></li>
+                                    <li><a class="user-menu__purchases" href="#">Your Purchases</a></li>
+                                    <li><a class="user-menu__favorites" href="#">Your Favorites</a></li>
+                                    <li><a class="user-menu__credits" href="#">Add Credits</a></li>
+                                    <li><a class="user-menu__sales" href="#">Sales Statements</a></li>
+                                    <li><a class="user-menu__upload" href="#">Upload Item</a></li>
+                                    <li><a class="user-menu__edit" href="#">Edit Item</a></li>
+                                    <li><a class="user-menu__withdrawals" href="#">Withdrawals</a></li>
+                                    <li><a class="user-menu__logout" href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                            <a class="header__btn header__btn-logout" href="#">Loguot</a>
+                            <a class="header__btn header__btn-login header__btn-off" href="#">Login</a>
+                            <a class="header__btn header__btn-register header__btn-off" href="#">Register</a>
+                        </div>
+                        <div class="header__btn-menu lnr-user"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="header__bottom-inner">
+                        <nav class="header__menu">
+                            <div class="menu__btn">
+                                <div class="menu__btn-line"></div>
+                                <div class="menu__btn-line"></div>
+                                <div class="menu__btn-line"></div>
+                            </div>
+                            <ul class="menu__list">
+                                <li class="header__drop-down drop-down">
+                                    <a href="#">HOME</a>
+                                    <ul class="drop-down__list">
+                                        <li><a href="#">Home One Multi User</a></li>
+                                        <li><a href="#">Home Two Single User</a></li>
+                                        <li><a href="#">Home Three Product</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__drop-down drop-down">
+                                    <a href="#">ALL PRODUCTS</a>
+                                    <ul class="drop-down__list">
+                                        <li><a href="#">Recent Items</a></li>
+                                        <li><a href="#">Popular Items</a></li>
+                                        <li><a href="#">Featured Items</a></li>
+                                        <li><a href="#">Free Templates</a></li>
+                                        <li><a href="#">Follow Feed</a></li>
+                                        <li><a href="#">Top Authors</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__drop-down drop-down">
+                                    <a href="#">WORDPRESS</a>
+                                    <ul class="drop-down__list">
+                                        <li><a href="#">Popular Items</a></li>
+                                        <li><a href="#">Admin Templates</a></li>
+                                        <li><a href="#">Blog / Magazine / News</a></li>
+                                        <li><a href="#">Creative</a></li>
+                                        <li><a href="#">Corporate Business</a></li>
+                                        <li><a href="#">Resume Portfolio</a></li>
+                                        <li><a href="#">eCommerce</a></li>
+                                        <li><a href="#">Entertainment</a></li>
+                                        <li><a href="#">Landing Pages</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">FESTURES</a></li>
+                                <li class="header__drop-down drop-down__pages">
+                                    <a href="#">PAGES</a>
+                                    <div class="drop-down__list">
+                                        <div class="drop-down__list-item drop-down__list-first">
+                                            <div class="drop-down__list-title">
+                                                MartPlace Pages
+                                            </div>
+                                            <ul class="drop-down__list-text drop-down__list-column">
+                                                <li><a href="#">Home Page One</a></li>
+                                                <li><a href="#">Home Page Two</a></li>
+                                                <li><a href="#">Home Page Three</a></li>
+                                                <li><a href="#">Products Grid</a></li>
+                                                <li><a href="#">Products List</a></li>
+                                                <li><a href="#">Category Grid Sidebar</a></li>
+                                                <li><a href="#">Category List Sidebar</a></li>
+                                                <li><a href="#">Search Product</a></li>
+                                                <li><a href="#">Single Product V-1</a></li>
+                                                <li><a href="#">Single Product V-2</a></li>
+                                                <li><a href="#">Single Product V-3</a></li>
+                                                <li><a href="#">Single Items Comments</a></li>
+                                                <li><a href="#">Single Items Reviews</a></li>
+                                                <li><a href="#">Single Items Support</a></li>
+                                                <li><a href="#">Single Items FAQs</a></li>
+                                                <li><a href="#">Favorites Items</a></li>
+                                                <li><a href="#">Author Profile</a></li>
+                                                <li><a href="#">Author Items</a></li>
+                                                <li><a href="#">Customer Reviews</a></li>
+                                                <li><a href="#">Followers</a></li>
+                                                <li><a href="#">Following</a></li>
+                                                <li><a href="#">Product View Variations</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="drop-down__list-item drop-down__list-middle">
+                                            <div class="drop-down__list-title">
+                                                Dashboard
+                                            </div>
+                                            <ul class="drop-down__list-text">
+                                                <li><a href="#">Dashboard</a></li>
+                                                <li><a href="#">Account Settings</a></li>
+                                                <li><a href="#">Author Purchases</a></li>
+                                                <li><a href="#">Items Rating</a></li>
+                                                <li><a href="#">Add Credits</a></li>
+                                                <li><a href="#">Statements</a></li>
+                                                <li><a href="#">Invoice</a></li>
+                                                <li><a href="#">Upload Item</a></li>
+                                                <li><a href="#">Edit Items</a></li>
+                                                <li><a href="#">Withdrawals</a></li>
+                                                <li><a href="#">Add Payment Method</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="drop-down__list-item drop-down__list-third">
+                                            <div class="drop-down__list-title">
+                                                Others Pages
+                                            </div>
+                                            <ul class="drop-down__list-text drop-down__list-column">
+                                                <li><a href="#">Notifications</a></li>
+                                                <li><a href="#">Message Inbox</a></li>
+                                                <li><a href="#">Message Compose</a></li>
+                                                <li><a href="#">Shopping Cart</a></li>
+                                                <li><a href="#">Checkout</a></li>
+                                                <li><a href="#">Login</a></li>
+                                                <li><a href="#">Register</a></li>
+                                                <li><a href="#">Recovery Password</a></li>
+                                                <li><a href="#">Support Forum</a></li>
+                                                <li><a href="#">Forum Details</a></li>
+                                                <li><a href="#">How It Works</a></li>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Pricing Plan</a></li>
+                                                <li><a href="#">Testimonials</a></li>
+                                                <li><a href="#">FAQs</a></li>
+                                                <li><a href="#">FAQs Details</a></li>
+                                                <li><a href="#">Affiliates</a></li>
+                                                <li><a href="#">Terms & Conditions</a></li>
+                                                <li><a href="#">Blog V-1</a></li>
+                                                <li><a href="#">Blog V-2</a></li>
+                                                <li><a href="#">Blog Details</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">Menu & Footer Variation</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>                         
+                            </ul>
+                        </nav>
+                        <div class="header__form">
+                            <form>
+                                <input type="text" placeholder="Search product here..." required>
+                                <button type="submit">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 20 20">
+                                        <path fill="#ffffff" d="M18.869 19.162l-5.943-6.484c1.339-1.401 2.075-3.233 2.075-5.178 0-2.003-0.78-3.887-2.197-5.303s-3.3-2.197-5.303-2.197-3.887 0.78-5.303 2.197-2.197 3.3-2.197 5.303 0.78 3.887 2.197 5.303 3.3 2.197 5.303 2.197c1.726 0 3.362-0.579 4.688-1.645l5.943 6.483c0.099 0.108 0.233 0.162 0.369 0.162 0.121 0 0.242-0.043 0.338-0.131 0.204-0.187 0.217-0.503 0.031-0.706zM1 7.5c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5-6.5-2.916-6.5-6.5z"></path>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__inner">
+                    <div class="breadcrumbs__list">
+                        <li><a href="#">Home</a></li>
+                        <li><span>Pricing Plan</span></li>
+                    </div>
+                    <div class="breadcrumbs__title">
+                        Pricing Plan
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing">
+            <div class="container">
+                <div class="pricing__title">
+                    Fair and Simple <span>Pricing</span> 
+                </div>
+                <div class="pricing__text">
+                    Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
+                </div>
+                <div class="pricing__inner">
+                    <div class="pricing__item">
+                        <div class="pricing__item-title">
+                            Starter
+                        </div>
+                        <div class="pricing__item-price">
+                           <sup>$</sup>69.00<span>/month</span> 
+                        </div>
+                        <ul class="pricing__item-list">
+                            <li><span>3 Months</span> Membership</li>
+                            <li class="pricing__item-special"><span>All Wordpress Templates</span></li>
+                            <li>Forum Support</li>
+                            <li>Unlimited Domain Usage</li>
+                            <li class="pricing__item-special"><span>1 Domain</span> Tech Support</li>
+                            <li>Copyright Removal</li>
+                            <li class="pricing__item-special"><span>Demos</span> Included</li>
+                            <li>Demo Pagebuilder</li>
+                        </ul>
+                        <a class="pricing__item-btn" href="#">
+                            Get Started Plan
+                        </a>
+                    </div>
+                    <div class="pricing__item pricing__item-second">
+                        <div class="pricing__item-title">
+                            Business
+                        </div>
+                        <div class="pricing__item-price">
+                           <sup>$</sup>99.00<span>/month</span> 
+                        </div>
+                        <ul class="pricing__item-list">
+                            <li><span>3 Months</span> Membership</li>
+                            <li class="pricing__item-special"><span>All Wordpress Templates</span></li>
+                            <li>Forum Support</li>
+                            <li>Unlimited Domain Usage</li>
+                            <li class="pricing__item-special"><span>1 Domain</span> Tech Support</li>
+                            <li>Copyright Removal</li>
+                            <li class="pricing__item-special"><span>Demos</span> Included</li>
+                            <li>Demo Pagebuilder</li>
+                        </ul>
+                        <a class="pricing__item-btn" href="#">
+                            Get Started Plan
+                        </a>
+                    </div>
+                    <div class="pricing__item pricing__item-third">
+                        <div class="pricing__item-title">
+                            Agency
+                        </div>
+                        <div class="pricing__item-price">
+                           <sup>$</sup>299.00<span>/month</span> 
+                        </div>
+                        <ul class="pricing__item-list">
+                            <li><span>3 Months</span> Membership</li>
+                            <li class="pricing__item-special"><span>All Wordpress Templates</span></li>
+                            <li>Forum Support</li>
+                            <li>Unlimited Domain Usage</li>
+                            <li class="pricing__item-special"><span>1 Domain</span> Tech Support</li>
+                            <li>Copyright Removal</li>
+                            <li class="pricing__item-special"><span>Demos</span> Included</li>
+                            <li>Demo Pagebuilder</li>
+                        </ul>
+                        <a class="pricing__item-btn" href="#">
+                            Get Started Plan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item footer__item-links">
+                        <div class="footer__logo">
+                            <a href="#">
+                                <img src="images/footer-logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="footer__text">
+                            Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+                        </div>
+                        <ul class="footer__links">
+                            <li><a href="tel:67898752235">Phone: +6789-875-2235</a></li>
+                            <li><a class="footer__email" href="#">support@aazztech.com</a></li>
+                            <li><a class="footer__adress" href="#">202 New Hampshire Avenue Northwest #100, New York-2573</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__title">
+                            Our Company
+                        </div>
+                        <ul class="footer__list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">How It Work</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Copyright Notice</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__title">
+                            Help Support
+                        </div>
+                        <ul class="footer__list">
+                            <li><a href="#">Support Forum</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Buyers Faq</a></li>
+                            <li><a href="#">Sellers Faq</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item footer__item-social">
+                        <div class="footer__title">
+                            Newsletter
+                        </div>
+                        <div class="footer__text">
+                            Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+                        </div>
+                        <div class="footer__form">
+                            <form>
+                                <input type="text" placeholder="Enter email" required>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="footer__social">
+                            <a href="#"><img src="images/icons/footer-icon-1.png" alt=""></a>
+                            <a href="#"><img src="images/icons/footer-icon-2.png" alt=""></a>
+                            <a href="#"><img src="images/icons/footer-icon-3.png" alt=""></a>
+                            <a href="#"><img src="images/icons/footer-icon-4.png" alt=""></a>
+                            <a href="#"><img src="images/icons/footer-icon-5.png" alt=""></a>
+                            <a href="#"><img src="images/icons/footer-icon-6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="container">
+                <div class="footer__copy-text">
+                    ©2017 <span>MartPlace</span>. All rights reserved. Created by <a href="#">AazzTech</a> 
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
