@@ -1476,8 +1476,13 @@
 .product-mixitup__inner-box {
     margin-bottom: 60px;
     display: flex;
-    justify-content: space-between;
+    margin-left: -30px;
     flex-wrap: wrap;
+}
+
+.product-mixitup__item {
+    margin-left: 30px;
+    flex-basis: calc(33.333% - 30px);
 }
 
 .product-mixitup__item,
@@ -1494,6 +1499,12 @@
             transition: all .5s;
         }
     }
+}
+
+.product-mixitup__item {
+    margin-left: 30px;
+    flex-basis: calc(33.333% - 30px);
+    max-width: 100%;
 }
 
 .product-mixitup__images,
@@ -1783,6 +1794,7 @@
     min-height: 560px;
     text-align: center;
     color: #ffffff;
+    padding: 0 15px;
 
     &-images {
         margin: 100px 0 45px;
@@ -2020,7 +2032,7 @@
     color: #000;
     margin-top: 20px;
 
-    span {
+    a {
         color: $btn;
     }
 
@@ -2597,19 +2609,19 @@
 .category__content-items,
 .favorites__content-items {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: -30px;
 }
 
 .category__content-item,
 .favorites__content-item {
     background-color: #fff;
-    max-width: 262px;
-    width: 100%;
+    flex-basis: calc(33.333% - 30px);
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     border-radius: 4px;
     margin-bottom: 30px;
     transition: all .5s;
+    margin-left: 30px;
 
     .rate-star {
         cursor: pointer;
@@ -2624,6 +2636,7 @@
 
     &.list {
         max-width: 100%;
+        flex-basis: 100%;
 
         .category__content-item-info,
         .favorites__content-item-info {
@@ -2672,6 +2685,7 @@
 
             a {
                 height: 100%;
+                width: 100%;
             }
 
             img {
@@ -2831,6 +2845,7 @@
         justify-content: space-between;
     }
 }
+
 
 .singles-content {
     max-width: 750px;
@@ -3061,43 +3076,69 @@
 
 .aside__item-cart-inner {
     padding: 30px 30px 40px;
+
+    form {
+
+        label {
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            display: inline;
+            height: auto;
+            width: auto;
+        }
+
+        .jq-checkbox.checked .jq-checkbox__div {
+            width: 11px;
+            height: 7px;
+            margin: 6px 0 0 4px;
+            border-bottom: 3px solid #fff;
+            border-left: 3px solid #fff;
+            -webkit-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+            border-radius: 2px;
+        }
+
+        .jq-checkbox, .jq-radio {
+            vertical-align: -5px;
+            width: 20px;
+            height: 20px;
+            margin: 0;
+            border: 4px solid #e6e9ed;
+            background: transparent;
+            box-shadow: none;
+            border-radius: 50%;
+        }
+
+        .jq-checkbox {
+            margin-right: 13px;
+        }
+        .jq-checkbox.checked {
+            background-color: $btn;
+            border: none;
+        }
+    }
 }
 
 .singles-aside__mini-title {
-    padding-left: 38px;
     font-size: 18px;
     font-weight: 500;
     color: #333333;
     margin-bottom: 15px;
-    position: relative;
-
-    &::before {
-        position: absolute;
-        content: "";
-        width: 20px;
-        height: 20px;
-        background-image: url(../images/icons/check-aside-title.png);
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 }
 
 .singles-aside__item-text {
     padding-left: 38px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ececec;
+    margin-top: 15px;
 }
 
 .aside__mini-title-multi {
     margin-top: 25px;
     margin-bottom: 30px;
-
-    &::before {
-        background-image: none;
-        border: 4px solid #e6e9ed;
-        border-radius: 50%;
-    }
+    display: inline-block;
 }
 
 .singles-aside__btn {
@@ -3269,6 +3310,7 @@
 
     &__title {
         font-size: 30px;
+        line-height: 34px;
         color: #000;
         margin-bottom: 45px;
         text-align: center;
@@ -3446,6 +3488,7 @@
 .blog__content-title {
     font-weight: 500;
     font-size: 30px;
+    line-height: 36px;
     color: $btn;
     margin-bottom: 15px;
 }
@@ -3876,7 +3919,7 @@
 .login__form-top,
 .register__form-top,
 .recover-password__form-top {
-    padding: 50px 0 25px;
+    padding: 50px 10px 25px;
     border-bottom: 1px solid #e8ebf0;
     text-align: center;
 }
@@ -3967,6 +4010,12 @@
     padding: 80px 0 25px;
     text-align: center;
 
+    .breadcrumbs__inner {
+        max-width: 1200px;
+        width: 100%;
+        text-align: center;
+    }
+
     .breadcrumbs__title {
         margin-bottom: 60px;
 
@@ -4041,6 +4090,7 @@
 
 .pricing__title {
     font-size: 36px;
+    line-height: 40px;
     color: #000;
     margin-bottom: 20px;
 
@@ -4116,7 +4166,7 @@
     }
 
     &-list {
-        text-align-last: left;
+        text-align: left;
         margin-bottom: 30px;
 
         li {
@@ -4160,6 +4210,10 @@
 .breadcrumbs-contact {
     text-align: center;
 
+    .breadcrumbs__inner {
+        width: 100%;
+    }
+
     .breadcrumbs__text {
         font-size: 20px;
         color: #f3f3f8;
@@ -4175,6 +4229,7 @@
 
 .contact__title {
     font-size: 36px;
+    line-height: 40px;
     color: #000;
     margin-bottom: 20px;
 
